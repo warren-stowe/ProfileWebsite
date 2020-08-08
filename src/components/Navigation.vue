@@ -24,8 +24,6 @@
 
 <script>
     export default {
-        props: ['CurrentDisplay'],
-
         methods: {
             updateDisplay: function (update) {
                 this.$emit('navSelection', update);

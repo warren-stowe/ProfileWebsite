@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <navigation v-bind:currentDisplay="currentDisplay" @navSelection="currentDisplay = $event"></navigation>
+        <navigation @navSelection="currentDisplay = $event"></navigation>
         <about v-if="currentDisplay == 'About'"></about>
         <contact v-if="currentDisplay == 'Contact'"></contact>
         <home v-if="currentDisplay == 'Home'"></home>
