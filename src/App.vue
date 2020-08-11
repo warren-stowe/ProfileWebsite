@@ -1,7 +1,7 @@
 <template>
     <v-app>
-        <v-app-bar app
-                   color="primary"
+        <v-toolbar-items app>
+                   <!--color="primary"
                    dark>
             <div class="d-flex align-center">
                 <v-img alt="Vuetify Logo"
@@ -26,13 +26,15 @@
                    text>
                 <span class="mr-2">Latest Release</span>
                 <v-icon>mdi-open-in-new</v-icon>
-            </v-btn>
+            </v-btn>-->
 
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link> |
-            <router-link to="/contact">Contact</router-link> |
-            <router-link to="/projects">Projects</router-link> |
-        </v-app-bar>
+            <v-tab to="/">Home</v-tab> |
+            <v-tab to="/about">About</v-tab> |
+            <v-tab to="/contact">Contact</v-tab> |
+            <v-tab to="/projects">Projects</v-tab> |
+
+            <router-view></router-view>
+        </v-toolbar-items>
 
 
 
@@ -42,16 +44,12 @@
 
 <script>
 
-    import About as 
 
     export default {
         name: 'App',
 
         components: {
-            About,
-            Contact,
-            Home,
-            Projects
+
         },
 
         data: () => ({
