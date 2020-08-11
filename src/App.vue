@@ -42,6 +42,7 @@
 
 <script>
 
+    import About as 
 
     export default {
         name: 'App',
