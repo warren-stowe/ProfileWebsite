@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-toolbar-items app>
-                   <!--color="primary"
+            <!--color="primary"
                    dark>
             <div class="d-flex align-center">
                 <v-img alt="Vuetify Logo"
@@ -27,14 +27,18 @@
                 <span class="mr-2">Latest Release</span>
                 <v-icon>mdi-open-in-new</v-icon>
             </v-btn>-->
+            <v-row>
+                <v-tab to="/">Home</v-tab> |
+                <v-tab to="/about">About</v-tab> |
+                <v-tab to="/contact">Contact</v-tab> |
+                <v-tab to="/projects">Projects</v-tab>
+            </v-row>
 
-            <v-tab to="/">Home</v-tab> |
-            <v-tab to="/about">About</v-tab> |
-            <v-tab to="/contact">Contact</v-tab> |
-            <v-tab to="/projects">Projects</v-tab> |
-
-            <router-view></router-view>
         </v-toolbar-items>
+
+        <v-row>
+            <router-view></router-view>
+        </v-row>
 
 
 
